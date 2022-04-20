@@ -18,15 +18,13 @@ class Convertor:
                                           font=('Arial', '16', 'bold'), bg=background_colour, padx=10, pady=10)
         self.temp_convertor_label.grid(row=0)
 
-        # Help button (row 1)
-        self.help_button = Button(self.converter_frame, text='Help', font=('Arial', '14'),
+        # Export button (row 1)
+        self.help_button = Button(self.converter_frame, text='Export', font=('Arial', '14'),
                                   padx=10, pady=10, command=self.help_activate)
         self.help_button.grid(row=1)
 
     def help_activate(self):
         print('You asked for help')
-        get_help = Help()
-        get_help.help_text.configure(text='Help text goes here')
 
 
 # main routine

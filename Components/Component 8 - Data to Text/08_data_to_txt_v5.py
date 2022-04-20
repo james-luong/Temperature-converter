@@ -43,3 +43,13 @@ while has_error == 'yes':
 
 # add /txt suffix
 filename = filename + '.txt'
+
+# Create file to hold data
+f = open(filename, 'w+')
+
+# add new line at the end of each item
+for item in data:
+    f.write(item + '\n')
+
+# close file
+f.close()

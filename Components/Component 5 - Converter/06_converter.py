@@ -73,7 +73,7 @@ class Converter:
         self.calc_hist_button.grid(row=0, column=0)
 
         self.help_button = Button(self.hist_help_frame, font='Arial 12 bold',
-                                  text='Help', width=5)
+                                  text='Export', width=5)
         self.help_button.grid(row=0, column=1)
 
     def temp_convert(self, to):

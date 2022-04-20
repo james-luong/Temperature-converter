@@ -18,8 +18,8 @@ class Convertor:
                                           font=('Arial', '16', 'bold'), bg=background_colour, padx=10, pady=10)
         self.temp_convertor_label.grid(row=0)
 
-        # Help button (row 1)
-        self.help_button = Button(self.converter_frame, text='Help', font=('Arial', '14'),
+        # Export button (row 1)
+        self.help_button = Button(self.converter_frame, text='Export', font=('Arial', '14'),
                                   padx=10, pady=10, command=self.help_activate)
         self.help_button.grid(row=1)
 
@@ -42,7 +42,7 @@ class Help:
         self.help_frame.grid()
 
         # set up help heading (row 1)
-        self.how_heading = Label(self.help_frame, text='Help/Instructions', font='arial 10 bold', bg=background)
+        self.how_heading = Label(self.help_frame, text='Export/Instructions', font='arial 10 bold', bg=background)
         self.how_heading.grid(row=0)
 
         # help text (label, row 1)

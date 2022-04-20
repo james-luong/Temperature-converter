@@ -1,7 +1,4 @@
-"""Follow on from 09_History_GUI_v5.py
-Removed all but 4 elements from this list
-Added else statement for list less than 7 elements
-Used index values for items in the list
+"""Changed the >= 7 to > 7
 """
 
 from tkinter import *
@@ -81,7 +78,7 @@ class Converter:
             self.history_button.config(state=DISABLED)
 
         self.help_button = Button(self.hist_help_frame, font='Arial 12 bold',
-                                  text='Help', width=5)
+                                  text='Export', width=5)
         self.help_button.grid(row=0, column=1)
 
     def temp_convert(self, low):
@@ -183,7 +180,7 @@ class History:
 
         # History output goes here (row 2)
         history_string = ''
-        if len(calc_history) >= 7:
+        if len(calc_history) > 7:
             for item in range(7):
                 history_string += calc_history[len(calc_history)-item-1] + '\n'
 
